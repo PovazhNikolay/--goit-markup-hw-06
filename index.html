@@ -470,6 +470,31 @@
             </li>
           </ul>
         </div>
+
+        <!-- ----block-subscribe------ -->
+
+        <form class="subscr-item" name="subscribe" autocomplete="on">
+          <b class="foot-soc">Subscribe</b>
+          <div class="subscr-wrap">
+            <input
+              class="subscribe-input"
+              name="user-email"
+              type="email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="subscr-btn" type="submit">Subscribe <span>
+
+              <svg class="subscr-icon" width="24" , height="20">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </span> </button>
+          </div>
+        </form>
+        <!-- ----block-subscribe------ -->
+
+
+        
       </div>
     </footer>
 
@@ -481,9 +506,6 @@
           </svg>
         </button>
 
-
-
-        
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
@@ -537,9 +559,7 @@
           </div>
 
           <div class="modal-field">
-            <label class="modal-label-text" for="user-comment"
-              >Comment</label
-            >
+            <label class="modal-label-text" for="user-comment">Comment</label>
             <textarea
               class="modal-textarea"
               id="user-comment"
@@ -547,22 +567,21 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          
 
           <div class="input-wrap">
-            <b class="text-checkbox">I accept the terms and conditions of the Privacy Policy</b>
+            <b class="text-checkbox"
+              >I accept the terms and conditions of the <a href="">Privacy Policy</a> </b
+            >
             <svg class="modal-chek-icon" width="16" height="16">
               <use href="./images/icons.svg#icon-checkbox"></use>
             </svg>
           </div>
 
           <button class="form-button" type="submit">Send</button>
-
-       
-
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>

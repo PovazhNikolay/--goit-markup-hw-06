@@ -600,6 +600,87 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+
+/* ----------FOTER_SUBSCR------------ */
+
+.subscr-item{
+  margin-left: 80px;
+}
+
+.subscr-wrap{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  align-items: center;
+  color:  rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  display: block;
+  outline: transparent;
+  padding-left: 16px;
+  
+  background-color: var(--brand-color) ;
+}
+
+.subscribe-input::placeholder {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6)
+
+}
+
+.subscribe-input:not(:focus):not(:placeholder-shown):valid {
+  background-color: rgba(255, 255, 255, 0.6)
+}
+
+.subscr-btn{
+  width: 165px;
+height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  padding: 16px 32px;
+  text-transform: none;
+  color: var(--menu-eff-color);
+  background: rgba(77, 90, 229, 1);
+  cursor: pointer;
+  transition-timing-function: var(--cubic);
+  transition-duration: var(--transition-direction-func);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border-radius: 4px;
+
+}
+
+.subscr-icon {
+  margin-left: 16px;
+  fill: var(--menu-eff-color);
+  display: flex;
+}
+
+.subscr-btn:hover,
+.subscr-btn:focus {
+  background-color: var(--menu-focus-color);
+  color: var(--menu-eff-color);
+}
+
+
+/* ----------FOTER_SUBSCR------------ */
+
+
 /**------------- FOOTER ------block---------*/
 
 /**------------- PORTFOLIO ------block---------*/
@@ -820,6 +901,7 @@ body {
   margin-top: 72px;
   margin-bottom: 15px;
 }
+
 
 .modal-input {
   width: 100%;
