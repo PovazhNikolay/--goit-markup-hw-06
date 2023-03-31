@@ -910,13 +910,14 @@ body {
 .modal-input:hover,
 .modal-input:focus {
   border-color: var(--menu-focus-color);
-
-  placeholder: var(--menu-focus-color);
+  fill: var(--menu-focus-color);
+ 
 }
 
 .modal-input-icon:hover,
 .modal-input-icon:focus {
   fill: var(--menu-focus-color);
+  border-color: var(--menu-focus-color);
 }
 
 .modal-input::placeholder {
@@ -948,7 +949,7 @@ body {
   line-height: 14px;
   letter-spacing: 0.04em;
   color: #757575;
-  padding-left: 24px;
+  
 }
 
 .p-p-eff:hover,
@@ -985,23 +986,52 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.text-checkbox span {
-padding-left: 0;
+
+
+.check-text span {
   width: 16px;
-height: 16px;
-border-radius: 2px;
-border: 1.25px solid rgba(46, 47, 66, 1);
-display: flex;
-justify-content: center;
-align-items: center;
-fill: transparent;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ fill: transparent;
+  transition: background-color
+  var(--transition-direction-func) var(--cubic);
+  margin-right: 8px;
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.modal-check:checked + .check-text span {
 
 }
 
-.modal-chek-icon {
-
-
+.modal-check:focus + .check-text span {
+  
+  background-color: var(--menu-focus-color) ;
+  fill: var(--menu-eff-color);
+  border: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .form-button {
   width: 169px;
