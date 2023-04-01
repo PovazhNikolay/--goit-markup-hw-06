@@ -485,7 +485,7 @@
             />
             <button class="subscr-btn" type="submit">
               Subscribe
-              <span>
+              <span class="subscr-icon-posit">
                 <svg class="subscr-icon" width="24" , height="20">
                   <use href="./images/icons.svg#icon-plane"></use>
                 </svg>
@@ -500,7 +500,7 @@
     <!-- ------------------------modal----------------------  -->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="modal modal-form">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" , height="8">
             <use href="./images/icons.svg#icon-cross"></use>
@@ -508,12 +508,13 @@
         </button>
 
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="modal-form">
+        <form class="">
           <div class="modal-field">
             <label class="modal-label-text" for="user-name">Name</label>
             <div class="input-wrap">
               <input
                 class="modal-input"
+                id="user-name"
                 type="text"
                 placeholder="Enter your name"
                 name="user-name"
@@ -549,6 +550,7 @@
             <div class="input-wrap">
               <input
                 class="modal-input"
+                id="user-email"
                 name="user-email"
                 type="email"
                 placeholder="Enter your email"
@@ -569,25 +571,24 @@
             ></textarea>
           </div>
           <div class="modal-field">
-            <input 
-            
-            class="modal-check vis-hidden"
-            id="privacy"
-            name="user-privacy"
-            type="checkbox "
-            value="true"
-            
-            
+            <input
+              class="modal-check vis-hidden"
+              id="privacy"
+              name="user-privacy"
+              type="checkbox "
+              value="true"
             />
 
             <label class="check-text text-checkbox" for="privacy">
-              <span><svg class="check-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg></span
-                >  I accept the terms and conditions of the<a class="p-p-eff" href="">Privacy Policy</a>
+              <span
+                ><svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg
+              ></span>
+              I accept the terms and conditions of the<a class="p-p-eff" href=""
+                >Privacy Policy</a
+              >
             </label>
           </div>
-        
 
           <button class="form-button" type="submit">Send</button>
         </form>
