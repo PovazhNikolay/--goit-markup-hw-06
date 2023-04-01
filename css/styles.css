@@ -1014,7 +1014,18 @@ body {
 }
 
 .modal-check:checked + .check-text span {
+  background-color: var(--menu-eff-color);
+  border: none;
+  fill: var(--menu-eff-color);
+  border-color: transparent;
 }
+
+/* .modal-check:checked :after {
+  display: none;
+  fill: var(--menu-eff-color);
+  border-color: transparent;
+} */
+
 
 .modal-check:focus + .check-text span {
   background-color: var(--menu-focus-color);
